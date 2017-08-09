@@ -1,0 +1,43 @@
+main: me.nerm.Main
+name: Hub
+version: 1.0
+commands:
+  help:
+    description: Shows the helpful/useful information about the ExortHQ Network..
+  ?:
+    description: Shows the helpful/useful information about the ExortHQ Network..
+  list:
+    description: Gathers all the Online Players and displays the amount connected to your Hub..
+  online:
+    description: Gathers all the Online Players and displays the amount connected to your Hub..
+  players:
+    description: Gathers all the Online Players and displays the amount connected to your Hub..
+  buy:
+    description: Sends you the link to the official ExortHQ Store..
+  store:
+    description: Sends you the link to the official ExortHQ Store..
+  donate:
+    description: Sends you the link to the official ExortHQ Store..
+  purchase:
+    description: Sends you the link to the official ExortHQ Store..
+  setspawn:
+    description: Sets the spawn in the world you ran the command in..
+    permission: set.spawn
+  ts:
+    description: Gives you the link to the official ExortHQ Team Speak Server..
+  ts3:
+    description: Gives you the link to the official ExortHQ Team Speak Server..
+  teamspeak:
+    description: Gives you the link to the official ExortHQ Team Speak Server..
+  clear:
+    description: Clear your/targets inventory.
+    permission: clear.inv
+  ci:
+    description: Clear your/targets inventory.
+    permission: clear.inv
+  clearchat:
+    description: Clear the Lobbys Chat.
+    permission: clear.chat
+  cc:
+    description: Clear the Lobbys Chat.
+    permission: clear.chat
