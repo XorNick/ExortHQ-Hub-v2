@@ -1,2 +1,7 @@
 WORLD: 'world'
 SELECTORNAME: '&7SELECT A SERVER.'
+HELP:
+ - '&6HELP ME'
+TEAMSPEAKIP: 'ts.dank.gg'
+STORE: 'shop.dank.gg'
+SCOREBOARDTITLE: '&2&lSERVERNAME'

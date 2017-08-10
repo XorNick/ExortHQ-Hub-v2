@@ -1,7 +1,5 @@
 package me.nerm.scoreboard;
 
-import java.util.UUID;
-
 import me.signatured.ezqueueshared.QueueInfo;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -20,7 +18,7 @@ public class ScoreboardManager {
 		Scoreboard board = Bukkit.getScoreboardManager().getNewScoreboard();
 		Objective obj = board.registerNewObjective("MAIN", "MAIN");
 		obj.setDisplaySlot(DisplaySlot.SIDEBAR);
-		obj.setDisplayName("§2§lExortHQ§7 |§2§l Network");
+		obj.setDisplayName(ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("SCOREBOARDTITLE")));
 
 		Team BAR = board.registerNewTeam("BAR");
 		BAR.addEntry("§9");

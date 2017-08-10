@@ -1,6 +1,6 @@
 package me.nerm.command;
 
-import org.bukkit.ChatColor;
+import me.nerm.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -21,7 +21,7 @@ public class TeamSpeakCommand implements CommandExecutor {
 		final String cmd = command.getName(); // Initialize Commands
 		if (cmd.equals("ts") || cmd.equals("ts3") || cmd.equals("teamspeak3")) {
 			player.sendMessage(C.GREEN + "You may connected to our Official " + C.ITALIC + "TeamSpeak Server " + C.GREEN
-					+ "at " + C.WHITE + C.UNDER + "store.exorthq.net" + C.GREEN + ".");
+					+ "at " + C.WHITE + C.UNDER + Main.getInstance().getConfig().getString("TEAMSPEAKIP") + C.GREEN + ".");
 			return true;
 		}
 		return true;

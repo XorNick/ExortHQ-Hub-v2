@@ -1,6 +1,5 @@
 package me.nerm.listeners.player;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;

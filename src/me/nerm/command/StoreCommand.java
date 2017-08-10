@@ -1,5 +1,6 @@
 package me.nerm.command;
 
+import me.nerm.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -19,7 +20,7 @@ public class StoreCommand implements CommandExecutor {
 		final String cmd = command.getName(); // Initialize Commands
 		if (cmd.equals("buy") || cmd.equals("store") || cmd.equals("donate") || cmd.equals("purchase")) {
 			player.sendMessage(C.GREEN + "You can purchase our" + C.ITALIC + " digital-goods" + C.GREEN
-					+ " on our store " + C.WHITE + C.UNDER + "store.exorthq.net" + C.GREEN + ".");
+					+ " on our store " + C.WHITE + C.UNDER + Main.getInstance().getConfig().getString("STORE") + C.GREEN + ".");
 			return true;
 		}
 		return true;

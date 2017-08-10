@@ -1,7 +1,6 @@
 package me.nerm.selector;
 
 import me.nerm.Main;
-import me.nerm.utils.C;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

@@ -1,7 +1,6 @@
 package me.nerm.tab;
 
 import lombok.experimental.UtilityClass;
-import me.nerm.listeners.player.PlayerJoin;
 import me.nerm.utils.C;
 import org.bukkit.entity.Player;
 
