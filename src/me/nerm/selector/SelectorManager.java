@@ -19,7 +19,10 @@ public class SelectorManager implements Listener {
 
     public void openInventory(final Player player) {
         Inventory selector = Bukkit.createInventory(null, (int) Math.ceil(Main.getInstance().getServerManager().getServers().size() / 9.0), ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("SELECTORNAME")));
-        Main.getInstance().getServerManager().getServers().stream().map(server -> Main.getInstance().getServerManager().getServerIcon(server.getName())).forEach(selector::addItem);
+        Main.getInstance().getServerManager().getServers().forEach(server -> {
+            ItemStack itemStack = Main.getInstance().getServerManager().getServerIcon(server.getName());
+            selector.setItem(server.getPosition(), itemStack);
+        });
         player.openInventory(selector);
     }
 
