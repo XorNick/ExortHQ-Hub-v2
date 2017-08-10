@@ -20,7 +20,7 @@ public class PlayerQuit implements Listener {
 	}
 
 	// Clear their inventory when they leave the server.
-	public void clear(final Player player) {
+	private void clear(final Player player) {
 		player.getInventory().setHelmet(null);
 		player.getInventory().setChestplate(null);
 		player.getInventory().setLeggings(null);

@@ -31,7 +31,7 @@ public class PlayerJoin implements Listener {
 	}
 
 	// Give the players the items on join.
-	public void give(final Player player) {
+	private void give(final Player player) {
 		player.getInventory().setItem(4, new ItemStackBuilder(Material.COMPASS).setName(C.GREEN + "Server Selector")
 				.addLore(C.YELLOW + "Click on an item to connect to a Server").build());
 		player.getInventory().setItem(8,
@@ -41,16 +41,16 @@ public class PlayerJoin implements Listener {
 	}
 
 	// Display the chat related information on join.
-	public void sendChat(final Player player) {
+	private void sendChat(final Player player) {
 		final Location location = player.getLocation();
 		player.playSound(location, Sound.LEVEL_UP, 1, 1);
 		player.sendMessage(Bar.CHAT);
 		player.sendMessage(C.GREEN + "Welcome to the " + C.DGREEN + C.BOLD + "ExortHQ Network" + C.GREEN + ".");
 		player.sendMessage("");
-		player.sendMessage(C.GREEN + "Store" + C.GRAY + " » " + C.DGREEN + "store.exorthq.net");
-		player.sendMessage(C.GREEN + "Voice" + C.GRAY + " » " + C.DGREEN + "ts.exorthq.net");
-		player.sendMessage(C.GREEN + "Reddit" + C.GRAY + " » " + C.DGREEN + "reddit.com/r/ExortHQ/");
-		player.sendMessage(C.GREEN + "Twitter" + C.GRAY + " » " + C.DGREEN + "twiter.com/ExortHQ");
+		player.sendMessage(C.GREEN + "Store" + C.GRAY + " \u00BB " + C.DGREEN + "store.exorthq.net");
+		player.sendMessage(C.GREEN + "Voice" + C.GRAY + " \u00BB " + C.DGREEN + "ts.exorthq.net");
+		player.sendMessage(C.GREEN + "Reddit" + C.GRAY + " \u00BB " + C.DGREEN + "reddit.com/r/ExortHQ/");
+		player.sendMessage(C.GREEN + "Twitter" + C.GRAY + " \u00BB " + C.DGREEN + "twiter.com/ExortHQ");
 		player.sendMessage(Bar.CHAT);
 	}
 }

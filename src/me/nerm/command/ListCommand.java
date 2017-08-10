@@ -16,14 +16,14 @@ public class ListCommand implements CommandExecutor {
 	public boolean onCommand(final CommandSender sender, final Command command, final String label,
 			final String[] args) {
 		if (!(sender instanceof Player)) {
-			sender.sendMessage(C.RED + "You must be a player in order to run commands.");
+			sender.sendMessage(C.RED + "You must be a player in order to run registerCommands.");
 			return true;
 		}
 		final Player player = (Player) sender; // Initialize Player
 		final String cmd = command.getName(); // Initialize Commands
 		if (cmd.equals("list") || cmd.equals("online") || cmd.equals("players")) {
 			player.sendMessage(Bar.CHAT);
-			player.sendMessage(C.GREEN + "There are currently " + C.DGREEN + Bukkit.getOnlinePlayers().length
+			player.sendMessage(C.GREEN + "There are currently " + C.DGREEN + Bukkit.getOnlinePlayers().size()
 					+ " players " + C.GREEN + "conntected to your " + C.ITALIC + "Hub" + C.GREEN + ".");
 			player.sendMessage(Bar.CHAT);
 			return true;

@@ -7,7 +7,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ItemStackBuilder {
 	private ItemStack itemStack;
@@ -29,11 +31,7 @@ public class ItemStackBuilder {
 	}
 
 	public ItemStackBuilder addLore(String... strings) {
-		List<String> loreArray = new ArrayList<String>();
-		for (String loreBit : strings) {
-			// Might want to replace this with ChatColor.WHITE in your code.
-			loreArray.add(ChatColor.WHITE + loreBit);
-		}
+		List<String> loreArray = Arrays.stream(strings).map(loreBit -> ChatColor.WHITE + loreBit).collect(Collectors.toList());
 		itemMeta.setLore(loreArray);
 		return this;
 	}

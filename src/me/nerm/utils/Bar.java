@@ -1,8 +1,11 @@
 package me.nerm.utils;
 
+import lombok.experimental.UtilityClass;
+
+@UtilityClass
 public class Bar {
 
-	public static String CHAT = C.GRAY + C.LINE + "-----------------------------------------------------";;
-	public static String BOARD = C.GRAY + C.LINE + "--------------";
+	public String CHAT = C.GRAY + C.LINE + "-----------------------------------------------------";;
+	public String BOARD = C.GRAY + C.LINE + "--------------";
 	
 }

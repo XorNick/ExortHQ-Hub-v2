@@ -13,7 +13,7 @@ public class ClearChatCommand implements CommandExecutor {
 	@Override
 	public boolean onCommand(final CommandSender sender, final Command command, final String label, final String[] args) {
 		if (!(sender instanceof Player)) {
-			sender.sendMessage(C.RED + "You must be a player in order to run commands.");
+			sender.sendMessage(C.RED + "You must be a player in order to run registerCommands.");
 			return true;
 		}
 		final Player player = (Player) sender; // Initialize Player

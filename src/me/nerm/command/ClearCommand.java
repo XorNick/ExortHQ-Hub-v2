@@ -14,7 +14,7 @@ public class ClearCommand implements CommandExecutor {
 	public boolean onCommand(final CommandSender sender, final Command command, final String label,
 			final String[] args) {
 		if (!(sender instanceof Player)) {
-			sender.sendMessage(C.RED + "You must be a player in order to run commands.");
+			sender.sendMessage(C.RED + "You must be a player in order to run registerCommands.");
 			return true;
 		}
 		final Player player = (Player) sender; // Initialize Player
@@ -38,7 +38,7 @@ public class ClearCommand implements CommandExecutor {
 				player.sendMessage(C.RED + "You may not clear your own inventory, Instead type /clear.");
 				return true;
 			}
-			if (args[0].equals(target)) {
+			if (args[0].equals(target.getName())) {
 				player.sendMessage(
 						C.GREEN + "You have cleared " + C.DGREEN + target.getName() + "'s " + C.GREEN + "inventory.");
 				target.sendMessage(

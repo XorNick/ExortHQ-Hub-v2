@@ -12,43 +12,43 @@ public class InventoryOpen implements Listener {
 	@EventHandler(priority = EventPriority.LOWEST)
 	public void onOpen(final InventoryOpenEvent event) {
 		InventoryType type = event.getInventory().getType();
-		if (type == type.ANVIL) {
+		if (type == InventoryType.ANVIL) {
 			event.setCancelled(true);
 		}
-		if (type == type.BEACON) {
+		if (type == InventoryType.BEACON) {
 			event.setCancelled(true);
 		}
-		if (type == type.BREWING) {
+		if (type == InventoryType.BREWING) {
 			event.setCancelled(true);
 		}
-		if (type == type.CHEST) {
+		if (type == InventoryType.CHEST) {
 			event.setCancelled(true);
 		}
-		if (type == type.CRAFTING) {
+		if (type == InventoryType.CRAFTING) {
 			event.setCancelled(true);
 		}
-		if (type == type.DISPENSER) {
+		if (type == InventoryType.DISPENSER) {
 			event.setCancelled(true);
 		}
-		if (type == type.DROPPER) {
+		if (type == InventoryType.DROPPER) {
 			event.setCancelled(true);
 		}
-		if (type == type.ENCHANTING) {
+		if (type == InventoryType.ENCHANTING) {
 			event.setCancelled(true);
 		}
-		if (type == type.ENDER_CHEST) {
+		if (type == InventoryType.ENDER_CHEST) {
 			event.setCancelled(true);
 		}
-		if (type == type.FURNACE) {
+		if (type == InventoryType.FURNACE) {
 			event.setCancelled(true);
 		}
-		if (type == type.HOPPER) {
+		if (type == InventoryType.HOPPER) {
 			event.setCancelled(true);
 		}
-		if (type == type.MERCHANT) {
+		if (type == InventoryType.MERCHANT) {
 			event.setCancelled(true);
 		}
-		if (type == type.WORKBENCH) {
+		if (type == InventoryType.WORKBENCH) {
 			event.setCancelled(true);
 		}
 	}
